@@ -60,7 +60,7 @@
                     <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i> Manajemen User<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                            <a class="{{ Request::path() === 'dosen' ? 'active-menu waves-effect waves-dark' : ''}} "href="/dosen" class="waves-effect waves-dark"><i class="fa fa-user fa-fw"></i> Manajemen Dosen</a>
+                            <a class="{{ Request::path() === 'admin/dosen' ? 'active-menu waves-effect waves-dark' : ''}} "href="/admin/dosen" class="waves-effect waves-dark"><i class="fa fa-user fa-fw"></i> Manajemen Dosen</a>
                             </li>
                             <li>
                             <a class="{{ Request::path() === 'admin/mahasiswa' ? 'active-menu waves-effect waves-dark' : ''}}" href="/admin/mahasiswa" class="waves-effect waves-dark"><i class="fa fa-group fa-fw"></i> Manajemen Mahasiswa</a>

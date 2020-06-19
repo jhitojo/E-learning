@@ -25,6 +25,15 @@ Route::delete('/admin/mahasiswa/{mahasiswa}','AdminController@destroy_mhs');
 Route::get('/admin/mahasiswa/{mahasiswa}/edit','AdminController@edit_mhs');
 Route::patch('/admin/mahasiswa/{mahasiswa}','AdminController@update_mhs');
 
+//admin -> manajemen Dosen
+Route::get('/admin/dosen','AdminController@index_dosen');
+Route::get('/admin/dosen/create','AdminController@create_dosen');
+Route::get('/admin/dosen/{dosen}','AdminController@show_dosen');
+Route::post('/admin/dosen','AdminController@store_dosen');
+Route::delete('/admin/dosen/{dosen}','AdminController@destroy_dosen');
+Route::get('/admin/dosen/{dosen}/edit','AdminController@edit_dosen');
+Route::patch('/admin/dosen/{dosen}','AdminController@update_dosen');
+
 Route::get('/dosen','DosenController@dosen');
 Route::get('/kelas','KelasController@kelas');
 Route::get('/matakuliah','MatakuliahController@matakuliah');
