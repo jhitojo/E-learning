@@ -16,7 +16,7 @@
             </li>
             <br>
             <li>
-            <a href="/admin/dosen/create" class="btn btn-success my-3">Tambah data Fakultas</a>
+            <a href="/admin/dosen/create" class="btn btn-success my-3">Tambah data Dosen</a>
             </li>
             <br>
             @if (session('status'))

@@ -12,9 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Login
+//Route::get('/','LoginController@login');
 
 //Dashboard admin
-Route::get('/','DashboardController@dashboard');
+Route::get('/admin','DashboardController@dashboard');
+Route::get('/session','SessionController@index');
+Route::get('/create-session','SessionController@createSession');
+Route::get('/get-session','SessionController@getSession');
+Route::get('/delete-session','SessionController@deleteSession');
+
 
 //admin -> manajemen Mahasiswa
 Route::get('/admin/mahasiswa','AdminController@index_mhs');
@@ -39,3 +46,6 @@ Route::get('/kelas','KelasController@kelas');
 Route::get('/matakuliah','MatakuliahController@matakuliah');
 Route::get('/materi','MateriController@materi');
 Route::get('/tugas','TugasController@tugas');
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');

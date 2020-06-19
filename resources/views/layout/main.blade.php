@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand waves-effect waves-dark" href="/"><i class="large material-icons">library_books</i><strong>E-Learning</strong></a>
+                <a class="navbar-brand waves-effect waves-dark"><i class="large material-icons">library_books</i><strong>E-Learning</strong></a>
                 
         <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
             </div>
@@ -54,7 +54,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li>
-                        <a class="{{ Request::path() === '/' ? 'active-menu waves-effect waves-dark' : ''}}" href="/"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="{{ Request::path() === 'admin' ? 'active-menu waves-effect waves-dark' : ''}}" href="/admin"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                     <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i> Manajemen User<span class="fa arrow"></span></a>
