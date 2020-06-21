@@ -6,10 +6,17 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Mahasiswa;
 use App\Dosen;
+use Illuminate\Support\Facades\Auth;
+
 
 class AdminController extends Controller
 {
-   
+    public function dashboard()
+    {
+        $user = Auth::user();
+        return view ('admin.Dashboard', compact('user', $user));
+    }
+
     public function index_mhs()
     {
         //$mahasiswa = DB:: table('Mahasiswa')->get();
@@ -130,5 +137,29 @@ class AdminController extends Controller
         Dosen::destroy($dosen->id);
         return redirect('/admin/dosen')->with('delete', 'Data Dosen Berhasil Dihapus!');
     }
+
+
+    public function kelas()
+    {
+        return view ('admin.kelas.index');
+    }
+
+    public function matakuliah()
+    {
+        return view ('admin.matakuliah.index');
+    }
+
+    
+    public function materi()
+    {
+        return view ('admin.materi.index');
+    }
+
+    public function tugas()
+    {
+        return view ('admin.tugas.index');
+    }
+
+    
     
 }

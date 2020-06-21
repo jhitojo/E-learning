@@ -56,31 +56,13 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li>
-                        <a class="{{ Request::path() === 'admin' ? 'active-menu waves-effect waves-dark' : ''}}" href="/admin"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="{{ Request::path() === 'dosen' ? 'active-menu waves-effect waves-dark' : ''}}" href="/dosen"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                    <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i> Manajemen User<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                            <a class="{{ Request::path() === 'admin/dosen' ? 'active-menu waves-effect waves-dark' : ''}} "href="/admin/dosen" class="waves-effect waves-dark"><i class="fa fa-user fa-fw"></i> Manajemen Dosen</a>
-                            </li>
-                            <li>
-                            <a class="{{ Request::path() === 'admin/mahasiswa' ? 'active-menu waves-effect waves-dark' : ''}}" href="/admin/mahasiswa" class="waves-effect waves-dark"><i class="fa fa-group fa-fw"></i> Manajemen Mahasiswa</a>
-                            </li>
-                        </ul>
+                        <a class="{{ Request::path() === 'dosen/materi' ? 'active-menu waves-effect waves-dark' : ''}}"href="/dosen/materi" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Materi </a>
                     </li>
                     <li>
-                        <a class="{{ Request::path() === 'admin/kelas' ? 'active-menu waves-effect waves-dark' : ''}}" href="/admin/kelas" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Manajemen Kelas</a>
-                    </li>
-                    
-                    <li>
-                        <a class="{{ Request::path() === 'admin/matakuliah' ? 'active-menu waves-effect waves-dark' : ''}}" href="/admin/matakuliah" class="waves-effect waves-dark"><i class="fa fa-table"></i> Mata Kuliah</a>
-                    </li>
-                    <li>
-                        <a class="{{ Request::path() === 'admin/materi' ? 'active-menu waves-effect waves-dark' : ''}}"href="/admin/materi" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Materi </a>
-                    </li>
-                    <li>
-                        <a class="{{ Request::path() === 'admin/tugas' ? 'active-menu waves-effect waves-dark' : ''}}"href="/admin/tugas" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Manajemen Tugas/Quiz </a>
+                        <a class="{{ Request::path() === 'dosen/tugas' ? 'active-menu waves-effect waves-dark' : ''}}"href="/dosen/tugas" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Manajemen Tugas/Quiz </a>
                     </li>
                 </ul>
 
